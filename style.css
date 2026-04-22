@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Пример основной шапки (как для oblmed.nsk.ru) */
+.hospital-header {
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.top-bar {
+    background: #0b3b5f; /* темно-синий медицинский */
+    color: white;
+    font-size: 13px;
+    padding: 8px 0;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contacts-header span {
+    margin-right: 20px;
+}
+
+.contacts-header i, .emergency i {
+    margin-right: 6px;
+}
+
+.emergency {
+    background: #c0392b;
+    padding: 4px 12px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.main-header {
+    padding: 16px 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo-icon {
+    font-size: 42px;
+}
+
+.logo-text h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0b3b5f;
+    letter-spacing: -0.3px;
+}
+
+.logo-text p {
+    font-size: 0.8rem;
+    color: #2c6979;
+    font-weight: 500;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #1e2f3e;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.nav-menu a:hover {
+    color: #0f6b8c;
+    border-bottom: 2px solid #0f6b8c;
+    padding-bottom: 4px;
+}
+
+.appointment-btn {
+    background: #1f7b4d;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 0.9rem;
+}
+
+.appointment-btn:hover {
+    background: #0e5a38;
+    transform: scale(1.02);
+}
+
+/* hero секция для демонстрации */
+.hero {
+    background: linear-gradient(135deg, #e0f0ff 0%, #c8e2f5 100%);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: #0b3b5f;
+}
+
+footer {
+    margin-top: auto;
+    background: #0b3b5f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 780px) {
+    .header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-menu ul {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .contacts-header span {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+}
+
+.swipe {
+    background: transparent;
+    border: 2px solid #3b82f6;
+    padding: 12px 28px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.swipe a {
+    text-decoration: none;
+    color: #3b82f6;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: system-ui;
+}
+
+.swipe:hover {
+    background: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.swipe:hover a {
+    color: white;
+}
+
+/* Центрирование по горизонтали */
+.container {
+    text-align: center;
+}
+
+/* Или прямо на body */
+body {
+    text-align: center;
+}
